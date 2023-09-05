@@ -103,7 +103,6 @@ const EditMyProfile: React.FC<{ selectedUser?: any }> = ({ selectedUser }) => {
             cloneExistingUser[foundExistingUserIndex] = selectedExistUser;
 
             // update local storage's userList
-            console.log(cloneExistingUser)
             localStorage.setItem("userList", JSON.stringify(cloneExistingUser));
         } else {
             // perform add action
