@@ -3,7 +3,7 @@ import Box from "@mui/material/Box";
 import { Button } from "@mui/material";
 import { DataGrid, GridColDef, GridValueGetterParams } from "@mui/x-data-grid";
 import { Link, useNavigate } from "react-router-dom";
-import EditMyProfile from "./editMyProfile";
+// import EditMyProfile from "./editMyProfile";
 
 export const DataGridDemo: React.FC = () => {
   const storedUsers = JSON.parse(localStorage.getItem("userList") || "[]");
@@ -56,7 +56,7 @@ export const DataGridDemo: React.FC = () => {
       getActions: (params: any) => [
         <Button
           onClick={() => {
-            console.log("params.row", params.row);
+            // console.log("params.row", params.row);
             // navigate('/editMyProfile');
             handleEditProfile(params.row);
           }}
@@ -83,6 +83,6 @@ export const DataGridDemo: React.FC = () => {
     </>
   );
 };
-function setSelectedUser(user: any) {
-  throw new Error("Function not implemented.");
-}
+// function setSelectedUser(user: any) {
+//   throw new Error("Function not implemented.");
+// }
